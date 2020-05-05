@@ -1,0 +1,7 @@
+h1 Todos list
+form(action="/todos", method="GET")
+  input(name="q", type="text")
+  button search
+each todo in list 
+  ul
+    li= todo.content
